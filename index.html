@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz">
+
+        <h1 id="titulo">Mini Quiz Interativo</h1>
+
+        <div id="inicio">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
+
+            <button id="iniciar" disabled>Iniciar Quiz</button>
+        </div>
+
+        <div id="perguntas">
+
+            <div class="questao">
+                <p>1. Qual equipamento conecta dispositivos em uma rede local?</p>
+
+                <ul>
+                    <li class="alternativa">Roteador</li>
+                    <li class="alternativa correta">Switch</li>
+                    <li class="alternativa">Monitor</li>
+                    <li class="alternativa">Processador</li>
+                </ul>
+            </div>
+
+            <div class="questao">
+                <p>2. Em Linguagem C, qual comando é usado para mostrar informações na tela?</p>
+
+                <ul>
+                    <li class="alternativa">scanf()</li>
+                    <li class="alternativa correta">printf()</li>
+                    <li class="alternativa">return()</li>
+                    <li class="alternativa">input()</li>
+                </ul>
+            </div>
+
+            <div class="questao">
+                <p>3. Qual das opções abaixo é um Sistema Operacional?</p>
+
+                <ul>
+                    <li class="alternativa">MySQL</li>
+                    <li class="alternativa">Google</li>
+                    <li class="alternativa correta">Ubuntu</li>
+                    <li class="alternativa">JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="questao">
+                <p>4. Qual comando SQL é usado para buscar dados de uma tabela?</p>
+
+                <ul>
+                    <li class="alternativa correta">SELECT</li>
+                    <li class="alternativa">DELETE</li>
+                    <li class="alternativa">DROP</li>
+                    <li class="alternativa">UPDATE</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <button id="enviar">Finalizar Quiz</button>
+
+        <div id="placar"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
